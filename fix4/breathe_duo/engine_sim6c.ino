@@ -381,7 +381,7 @@ void EngineSimulator::update_dynamics() {
 
       // Clear latch shortly after start so we don't double-fire
       if (phase > 10.0f) {
-        cylinders[cyl].ignition_fired = false;
+        //cylinders[cyl].ignition_fired = false; // this reduces power 
       }
     }
 
