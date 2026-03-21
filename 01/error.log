@@ -1,0 +1,1768 @@
+In file included from engine_sim.h:7,
+                 from main.cpp:22:
+mock_arduino.h:17:23: error: expected identifier before numeric constant
+   17 | #define OUTPUT        1
+      |                       ^
+mock_arduino.h:17:23: error: expected ‘}’ before numeric constant
+In file included from /usr/include/FL/Fl_Group.H:26,
+                 from /usr/include/FL/Fl_Window.H:29,
+                 from /usr/include/FL/Fl_Double_Window.H:25,
+                 from main.cpp:25:
+/usr/include/FL/Fl_Widget.H:155:8: note: to match this ‘{’
+  155 |   enum {
+      |        ^
+mock_arduino.h:17:23: error: expected unqualified-id before numeric constant
+   17 | #define OUTPUT        1
+      |                       ^
+/usr/include/FL/Fl_Widget.H:181:19: error: non-member function ‘void draw_box()’ cannot have cv-qualifier
+  181 |   void draw_box() const;
+      |                   ^~~~~
+/usr/include/FL/Fl_Widget.H:182:43: error: non-member function ‘void draw_box(Fl_Boxtype, Fl_Color)’ cannot have cv-qualifier
+  182 |   void draw_box(Fl_Boxtype t, Fl_Color c) const;
+      |                                           ^~~~~
+/usr/include/FL/Fl_Widget.H:183:68: error: non-member function ‘void draw_box(Fl_Boxtype, int, int, int, int, Fl_Color)’ cannot have cv-qualifier
+  183 |   void draw_box(Fl_Boxtype t, int x,int y,int w,int h, Fl_Color c) const;
+      |                                                                    ^~~~~
+/usr/include/FL/Fl_Widget.H:184:24: error: non-member function ‘void draw_backdrop()’ cannot have cv-qualifier
+  184 |   void draw_backdrop() const;
+      |                        ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void draw_focus()’:
+/usr/include/FL/Fl_Widget.H:186:33: error: ‘box’ was not declared in this scope
+  186 |   void draw_focus() {draw_focus(box(),x(),y(),w(),h());}
+      |                                 ^~~
+/usr/include/FL/Fl_Widget.H:186:39: error: ‘x’ was not declared in this scope
+  186 |   void draw_focus() {draw_focus(box(),x(),y(),w(),h());}
+      |                                       ^
+/usr/include/FL/Fl_Widget.H:186:43: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+  186 |   void draw_focus() {draw_focus(box(),x(),y(),w(),h());}
+      |                                           ^
+      |                                           yn
+/usr/include/FL/Fl_Widget.H:186:47: error: ‘w’ was not declared in this scope
+  186 |   void draw_focus() {draw_focus(box(),x(),y(),w(),h());}
+      |                                               ^
+/usr/include/FL/Fl_Widget.H:186:51: error: ‘h’ was not declared in this scope
+  186 |   void draw_focus() {draw_focus(box(),x(),y(),w(),h());}
+      |                                                   ^
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:187:58: error: non-member function ‘void draw_focus(Fl_Boxtype, int, int, int, int)’ cannot have cv-qualifier
+  187 |   void draw_focus(Fl_Boxtype t, int x,int y,int w,int h) const;
+      |                                                          ^~~~~
+/usr/include/FL/Fl_Widget.H:188:21: error: non-member function ‘void draw_label()’ cannot have cv-qualifier
+  188 |   void draw_label() const;
+      |                     ^~~~~
+/usr/include/FL/Fl_Widget.H:189:39: error: non-member function ‘void draw_label(int, int, int, int)’ cannot have cv-qualifier
+  189 |   void draw_label(int, int, int, int) const;
+      |                                       ^~~~~
+/usr/include/FL/Fl_Widget.H:191:1: error: expected unqualified-id before ‘public’
+  191 | public:
+      | ^~~~~~
+/usr/include/FL/Fl_Widget.H:219:3: error: ‘virtual’ outside class declaration
+  219 |   virtual void draw() = 0;
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:219:16: error: function ‘void draw()’ is initialized like a variable
+  219 |   virtual void draw() = 0;
+      |                ^~~~
+/usr/include/FL/Fl_Widget.H:237:3: error: ‘virtual’ outside class declaration
+  237 |   virtual int handle(int event);
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:247:25: error: non-member function ‘int is_label_copied()’ cannot have cv-qualifier
+  247 |   int is_label_copied() const {return ((flags_ & COPIED_LABEL) ? 1 : 0);}
+      |                         ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int is_label_copied()’:
+/usr/include/FL/Fl_Widget.H:247:41: error: ‘flags_’ was not declared in this scope
+  247 |   int is_label_copied() const {return ((flags_ & COPIED_LABEL) ? 1 : 0);}
+      |                                         ^~~~~~
+/usr/include/FL/Fl_Widget.H:247:50: error: ‘COPIED_LABEL’ was not declared in this scope
+  247 |   int is_label_copied() const {return ((flags_ & COPIED_LABEL) ? 1 : 0);}
+      |                                                  ^~~~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:254:22: error: non-member function ‘Fl_Group* parent()’ cannot have cv-qualifier
+  254 |   Fl_Group* parent() const {return parent_;}
+      |                      ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Group* parent()’:
+/usr/include/FL/Fl_Widget.H:254:36: error: ‘parent_’ was not declared in this scope; did you mean ‘parent’?
+  254 |   Fl_Group* parent() const {return parent_;}
+      |                                    ^~~~~~~
+      |                                    parent
+/usr/include/FL/Fl_Widget.H: In function ‘void parent(Fl_Group*)’:
+/usr/include/FL/Fl_Widget.H:264:29: error: ‘parent_’ was not declared in this scope; did you mean ‘parent’?
+  264 |   void parent(Fl_Group* p) {parent_ = p;} // for hacks only, use Fl_Group::add()
+      |                             ^~~~~~~
+      |                             parent
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:274:16: error: non-member function ‘uchar type()’ cannot have cv-qualifier
+  274 |   uchar type() const {return type_;}
+      |                ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘uchar type()’:
+/usr/include/FL/Fl_Widget.H:274:30: error: ‘type_’ was not declared in this scope; did you mean ‘type’?
+  274 |   uchar type() const {return type_;}
+      |                              ^~~~~
+      |                              type
+/usr/include/FL/Fl_Widget.H: In function ‘void type(uchar)’:
+/usr/include/FL/Fl_Widget.H:279:23: error: ‘type_’ was not declared in this scope; did you mean ‘type’?
+  279 |   void type(uchar t) {type_ = t;}
+      |                       ^~~~~
+      |                       type
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:284:11: error: non-member function ‘int x()’ cannot have cv-qualifier
+  284 |   int x() const {return x_;}
+      |           ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int x()’:
+/usr/include/FL/Fl_Widget.H:284:25: error: ‘x_’ was not declared in this scope; did you mean ‘x’?
+  284 |   int x() const {return x_;}
+      |                         ^~
+      |                         x
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:289:11: error: non-member function ‘int y()’ cannot have cv-qualifier
+  289 |   int y() const {return y_;}
+      |           ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int y()’:
+/usr/include/FL/Fl_Widget.H:289:25: error: ‘y_’ was not declared in this scope; did you mean ‘yn’?
+  289 |   int y() const {return y_;}
+      |                         ^~
+      |                         yn
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:294:11: error: non-member function ‘int w()’ cannot have cv-qualifier
+  294 |   int w() const {return w_;}
+      |           ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int w()’:
+/usr/include/FL/Fl_Widget.H:294:25: error: ‘w_’ was not declared in this scope; did you mean ‘w’?
+  294 |   int w() const {return w_;}
+      |                         ^~
+      |                         w
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:299:11: error: non-member function ‘int h()’ cannot have cv-qualifier
+  299 |   int h() const {return h_;}
+      |           ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int h()’:
+/usr/include/FL/Fl_Widget.H:299:25: error: ‘h_’ was not declared in this scope; did you mean ‘h’?
+  299 |   int h() const {return h_;}
+      |                         ^~
+      |                         h
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:320:3: error: ‘virtual’ outside class declaration
+  320 |   virtual void resize(int x, int y, int w, int h);
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void position(int, int)’:
+/usr/include/FL/Fl_Widget.H:332:42: error: ‘w_’ was not declared in this scope; did you mean ‘w’?
+  332 |   void position(int X,int Y) {resize(X,Y,w_,h_);}
+      |                                          ^~
+      |                                          w
+/usr/include/FL/Fl_Widget.H:332:45: error: ‘h_’ was not declared in this scope; did you mean ‘h’?
+  332 |   void position(int X,int Y) {resize(X,Y,w_,h_);}
+      |                                             ^~
+      |                                             h
+/usr/include/FL/Fl_Widget.H: In function ‘void size(int, int)’:
+/usr/include/FL/Fl_Widget.H:341:34: error: ‘x_’ was not declared in this scope; did you mean ‘x’?
+  341 |   void size(int W,int H) {resize(x_,y_,W,H);}
+      |                                  ^~
+      |                                  x
+/usr/include/FL/Fl_Widget.H:341:37: error: ‘y_’ was not declared in this scope; did you mean ‘yn’?
+  341 |   void size(int W,int H) {resize(x_,y_,W,H);}
+      |                                     ^~
+      |                                     yn
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:348:20: error: non-member function ‘Fl_Align align()’ cannot have cv-qualifier
+  348 |   Fl_Align align() const {return label_.align_;}
+      |                    ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Align align()’:
+/usr/include/FL/Fl_Widget.H:348:34: error: ‘label_’ was not declared in this scope
+  348 |   Fl_Align align() const {return label_.align_;}
+      |                                  ^~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void align(Fl_Align)’:
+/usr/include/FL/Fl_Widget.H:357:35: error: ‘label_’ was not declared in this scope
+  357 |   void align(Fl_Align alignment) {label_.align_ = alignment;}
+      |                                   ^~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:363:20: error: non-member function ‘Fl_Boxtype box()’ cannot have cv-qualifier
+  363 |   Fl_Boxtype box() const {return (Fl_Boxtype)box_;}
+      |                    ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Boxtype box()’:
+/usr/include/FL/Fl_Widget.H:363:46: error: ‘box_’ was not declared in this scope; did you mean ‘box’?
+  363 |   Fl_Boxtype box() const {return (Fl_Boxtype)box_;}
+      |                                              ^~~~
+      |                                              box
+/usr/include/FL/Fl_Widget.H: In function ‘void box(Fl_Boxtype)’:
+/usr/include/FL/Fl_Widget.H:372:33: error: ‘box_’ was not declared in this scope; did you mean ‘box’?
+  372 |   void box(Fl_Boxtype new_box) {box_ = new_box;}
+      |                                 ^~~~
+      |                                 box
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:378:20: error: non-member function ‘Fl_Color color()’ cannot have cv-qualifier
+  378 |   Fl_Color color() const {return color_;}
+      |                    ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Color color()’:
+/usr/include/FL/Fl_Widget.H:378:34: error: ‘color_’ was not declared in this scope; did you mean ‘color’?
+  378 |   Fl_Color color() const {return color_;}
+      |                                  ^~~~~~
+      |                                  color
+/usr/include/FL/Fl_Widget.H: In function ‘void color(Fl_Color)’:
+/usr/include/FL/Fl_Widget.H:390:28: error: ‘color_’ was not declared in this scope; did you mean ‘color’?
+  390 |   void color(Fl_Color bg) {color_ = bg;}
+      |                            ^~~~~~
+      |                            color
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:396:30: error: non-member function ‘Fl_Color selection_color()’ cannot have cv-qualifier
+  396 |   Fl_Color selection_color() const {return color2_;}
+      |                              ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Color selection_color()’:
+/usr/include/FL/Fl_Widget.H:396:44: error: ‘color2_’ was not declared in this scope; did you mean ‘color’?
+  396 |   Fl_Color selection_color() const {return color2_;}
+      |                                            ^~~~~~~
+      |                                            color
+/usr/include/FL/Fl_Widget.H: In function ‘void selection_color(Fl_Color)’:
+/usr/include/FL/Fl_Widget.H:406:37: error: ‘color2_’ was not declared in this scope; did you mean ‘color’?
+  406 |   void selection_color(Fl_Color a) {color2_ = a;}
+      |                                     ^~~~~~~
+      |                                     color
+/usr/include/FL/Fl_Widget.H: In function ‘void color(Fl_Color, Fl_Color)’:
+/usr/include/FL/Fl_Widget.H:415:42: error: ‘color_’ was not declared in this scope; did you mean ‘color’?
+  415 |   void color(Fl_Color bg, Fl_Color sel) {color_=bg; color2_=sel;}
+      |                                          ^~~~~~
+      |                                          color
+/usr/include/FL/Fl_Widget.H:415:53: error: ‘color2_’ was not declared in this scope; did you mean ‘color’?
+  415 |   void color(Fl_Color bg, Fl_Color sel) {color_=bg; color2_=sel;}
+      |                                                     ^~~~~~~
+      |                                                     color
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:421:23: error: non-member function ‘const char* label()’ cannot have cv-qualifier
+  421 |   const char* label() const {return label_.value;}
+      |                       ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘const char* label()’:
+/usr/include/FL/Fl_Widget.H:421:37: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  421 |   const char* label() const {return label_.value;}
+      |                                     ^~~~~~
+      |                                     label
+/usr/include/FL/Fl_Widget.H: In function ‘void label(Fl_Labeltype, const char*)’:
+/usr/include/FL/Fl_Widget.H:450:46: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  450 |   void label(Fl_Labeltype a, const char* b) {label_.type = a; label_.value = b;}
+      |                                              ^~~~~~
+      |                                              label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:456:28: error: non-member function ‘Fl_Labeltype labeltype()’ cannot have cv-qualifier
+  456 |   Fl_Labeltype labeltype() const {return (Fl_Labeltype)label_.type;}
+      |                            ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Labeltype labeltype()’:
+/usr/include/FL/Fl_Widget.H:456:56: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  456 |   Fl_Labeltype labeltype() const {return (Fl_Labeltype)label_.type;}
+      |                                                        ^~~~~~
+      |                                                        label
+/usr/include/FL/Fl_Widget.H: In function ‘void labeltype(Fl_Labeltype)’:
+/usr/include/FL/Fl_Widget.H:466:35: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  466 |   void labeltype(Fl_Labeltype a) {label_.type = a;}
+      |                                   ^~~~~~
+      |                                   label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:472:25: error: non-member function ‘Fl_Color labelcolor()’ cannot have cv-qualifier
+  472 |   Fl_Color labelcolor() const {return label_.color;}
+      |                         ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Color labelcolor()’:
+/usr/include/FL/Fl_Widget.H:472:39: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  472 |   Fl_Color labelcolor() const {return label_.color;}
+      |                                       ^~~~~~
+      |                                       label
+/usr/include/FL/Fl_Widget.H: In function ‘void labelcolor(Fl_Color)’:
+/usr/include/FL/Fl_Widget.H:478:32: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  478 |   void labelcolor(Fl_Color c) {label_.color=c;}
+      |                                ^~~~~~
+      |                                label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:487:23: error: non-member function ‘Fl_Font labelfont()’ cannot have cv-qualifier
+  487 |   Fl_Font labelfont() const {return label_.font;}
+      |                       ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Font labelfont()’:
+/usr/include/FL/Fl_Widget.H:487:37: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  487 |   Fl_Font labelfont() const {return label_.font;}
+      |                                     ^~~~~~
+      |                                     label
+/usr/include/FL/Fl_Widget.H: In function ‘void labelfont(Fl_Font)’:
+/usr/include/FL/Fl_Widget.H:496:30: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  496 |   void labelfont(Fl_Font f) {label_.font=f;}
+      |                              ^~~~~~
+      |                              label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:502:27: error: non-member function ‘Fl_Fontsize labelsize()’ cannot have cv-qualifier
+  502 |   Fl_Fontsize labelsize() const {return label_.size;}
+      |                           ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Fontsize labelsize()’:
+/usr/include/FL/Fl_Widget.H:502:41: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  502 |   Fl_Fontsize labelsize() const {return label_.size;}
+      |                                         ^~~~~~
+      |                                         label
+/usr/include/FL/Fl_Widget.H: In function ‘void labelsize(Fl_Fontsize)’:
+/usr/include/FL/Fl_Widget.H:508:36: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  508 |   void labelsize(Fl_Fontsize pix) {label_.size=pix;}
+      |                                    ^~~~~~
+      |                                    label
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Image* image()’:
+/usr/include/FL/Fl_Widget.H:514:29: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  514 |   Fl_Image* image() {return label_.image;}
+      |                             ^~~~~~
+      |                             label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:515:27: error: non-member function ‘const Fl_Image* image()’ cannot have cv-qualifier
+  515 |   const Fl_Image* image() const {return label_.image;}
+      |                           ^~~~~
+/usr/include/FL/Fl_Widget.H:515:19: error: ambiguating new declaration of ‘const Fl_Image* image()’
+  515 |   const Fl_Image* image() const {return label_.image;}
+      |                   ^~~~~
+/usr/include/FL/Fl_Widget.H:514:13: note: old declaration ‘Fl_Image* image()’
+  514 |   Fl_Image* image() {return label_.image;}
+      |             ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘const Fl_Image* image()’:
+/usr/include/FL/Fl_Widget.H:515:41: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  515 |   const Fl_Image* image() const {return label_.image;}
+      |                                         ^~~~~~
+      |                                         label
+/usr/include/FL/Fl_Widget.H: In function ‘void image(Fl_Image*)’:
+/usr/include/FL/Fl_Widget.H:521:30: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  521 |   void image(Fl_Image* img) {label_.image=img;}
+      |                              ^~~~~~
+      |                              label
+/usr/include/FL/Fl_Widget.H: In function ‘void image(Fl_Image&)’:
+/usr/include/FL/Fl_Widget.H:527:30: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  527 |   void image(Fl_Image& img) {label_.image=&img;}
+      |                              ^~~~~~
+      |                              label
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Image* deimage()’:
+/usr/include/FL/Fl_Widget.H:533:31: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  533 |   Fl_Image* deimage() {return label_.deimage;}
+      |                               ^~~~~~
+      |                               label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:534:29: error: non-member function ‘const Fl_Image* deimage()’ cannot have cv-qualifier
+  534 |   const Fl_Image* deimage() const {return label_.deimage;}
+      |                             ^~~~~
+/usr/include/FL/Fl_Widget.H:534:19: error: ambiguating new declaration of ‘const Fl_Image* deimage()’
+  534 |   const Fl_Image* deimage() const {return label_.deimage;}
+      |                   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:533:13: note: old declaration ‘Fl_Image* deimage()’
+  533 |   Fl_Image* deimage() {return label_.deimage;}
+      |             ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘const Fl_Image* deimage()’:
+/usr/include/FL/Fl_Widget.H:534:43: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  534 |   const Fl_Image* deimage() const {return label_.deimage;}
+      |                                           ^~~~~~
+      |                                           label
+/usr/include/FL/Fl_Widget.H: In function ‘void deimage(Fl_Image*)’:
+/usr/include/FL/Fl_Widget.H:540:32: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  540 |   void deimage(Fl_Image* img) {label_.deimage=img;}
+      |                                ^~~~~~
+      |                                label
+/usr/include/FL/Fl_Widget.H: In function ‘void deimage(Fl_Image&)’:
+/usr/include/FL/Fl_Widget.H:546:32: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  546 |   void deimage(Fl_Image& img) {label_.deimage=&img;}
+      |                                ^~~~~~
+      |                                label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:552:25: error: non-member function ‘const char* tooltip()’ cannot have cv-qualifier
+  552 |   const char *tooltip() const {return tooltip_;}
+      |                         ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘const char* tooltip()’:
+/usr/include/FL/Fl_Widget.H:552:39: error: ‘tooltip_’ was not declared in this scope; did you mean ‘tooltip’?
+  552 |   const char *tooltip() const {return tooltip_;}
+      |                                       ^~~~~~~~
+      |                                       tooltip
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:561:28: error: non-member function ‘void (* callback())(Fl_Widget*, void*)’ cannot have cv-qualifier
+  561 |   Fl_Callback_p callback() const {return callback_;}
+      |                            ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void (* callback())(Fl_Widget*, void*)’:
+/usr/include/FL/Fl_Widget.H:561:42: error: ‘callback_’ was not declared in this scope; did you mean ‘callback’?
+  561 |   Fl_Callback_p callback() const {return callback_;}
+      |                                          ^~~~~~~~~
+      |                                          callback
+/usr/include/FL/Fl_Widget.H: In function ‘void callback(void (*)(Fl_Widget*, void*), void*)’:
+/usr/include/FL/Fl_Widget.H:568:44: error: ‘callback_’ was not declared in this scope; did you mean ‘callback’?
+  568 |   void callback(Fl_Callback* cb, void* p) {callback_=cb; user_data_=p;}
+      |                                            ^~~~~~~~~
+      |                                            callback
+/usr/include/FL/Fl_Widget.H:568:58: error: ‘user_data_’ was not declared in this scope
+  568 |   void callback(Fl_Callback* cb, void* p) {callback_=cb; user_data_=p;}
+      |                                                          ^~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void callback(void (*)(Fl_Widget*, void*))’:
+/usr/include/FL/Fl_Widget.H:574:35: error: ‘callback_’ was not declared in this scope; did you mean ‘callback’?
+  574 |   void callback(Fl_Callback* cb) {callback_=cb;}
+      |                                   ^~~~~~~~~
+      |                                   callback
+/usr/include/FL/Fl_Widget.H: In function ‘void callback(void (*)(Fl_Widget*))’:
+/usr/include/FL/Fl_Widget.H:580:35: error: ‘callback_’ was not declared in this scope; did you mean ‘callback’?
+  580 |   void callback(Fl_Callback0*cb) {callback_=(Fl_Callback*)cb;}
+      |                                   ^~~~~~~~~
+      |                                   callback
+/usr/include/FL/Fl_Widget.H: In function ‘void callback(void (*)(Fl_Widget*, long int), long int)’:
+/usr/include/FL/Fl_Widget.H:587:45: error: ‘callback_’ was not declared in this scope; did you mean ‘callback’?
+  587 |   void callback(Fl_Callback1*cb, long p=0) {callback_=(Fl_Callback*)cb; user_data_=(void*)(fl_intptr_t)p;}
+      |                                             ^~~~~~~~~
+      |                                             callback
+/usr/include/FL/Fl_Widget.H:587:73: error: ‘user_data_’ was not declared in this scope
+  587 |   void callback(Fl_Callback1*cb, long p=0) {callback_=(Fl_Callback*)cb; user_data_=(void*)(fl_intptr_t)p;}
+      |                                                                         ^~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:593:21: error: non-member function ‘void* user_data()’ cannot have cv-qualifier
+  593 |   void* user_data() const {return user_data_;}
+      |                     ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void* user_data()’:
+/usr/include/FL/Fl_Widget.H:593:35: error: ‘user_data_’ was not declared in this scope; did you mean ‘user_data’?
+  593 |   void* user_data() const {return user_data_;}
+      |                                   ^~~~~~~~~~
+      |                                   user_data
+/usr/include/FL/Fl_Widget.H: In function ‘void user_data(void*)’:
+/usr/include/FL/Fl_Widget.H:599:28: error: ‘user_data_’ was not declared in this scope; did you mean ‘user_data’?
+  599 |   void user_data(void* v) {user_data_ = v;}
+      |                            ^~~~~~~~~~
+      |                            user_data
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:605:19: error: non-member function ‘long int argument()’ cannot have cv-qualifier
+  605 |   long argument() const {return (long)(fl_intptr_t)user_data_;}
+      |                   ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘long int argument()’:
+/usr/include/FL/Fl_Widget.H:605:52: error: ‘user_data_’ was not declared in this scope; did you mean ‘user_data’?
+  605 |   long argument() const {return (long)(fl_intptr_t)user_data_;}
+      |                                                    ^~~~~~~~~~
+      |                                                    user_data
+/usr/include/FL/Fl_Widget.H: In function ‘void argument(long int)’:
+/usr/include/FL/Fl_Widget.H:611:26: error: ‘user_data_’ was not declared in this scope; did you mean ‘user_data’?
+  611 |   void argument(long v) {user_data_ = (void*)(fl_intptr_t)v;}
+      |                          ^~~~~~~~~~
+      |                          user_data
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:621:18: error: non-member function ‘Fl_When when()’ cannot have cv-qualifier
+  621 |   Fl_When when() const {return (Fl_When)when_;}
+      |                  ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_When when()’:
+/usr/include/FL/Fl_Widget.H:621:41: error: ‘when_’ was not declared in this scope; did you mean ‘when’?
+  621 |   Fl_When when() const {return (Fl_When)when_;}
+      |                                         ^~~~~
+      |                                         when
+/usr/include/FL/Fl_Widget.H: In function ‘void when(uchar)’:
+/usr/include/FL/Fl_Widget.H:654:23: error: ‘when_’ was not declared in this scope; did you mean ‘when’?
+  654 |   void when(uchar i) {when_ = i;}
+      |                       ^~~~~
+      |                       when
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:660:26: error: non-member function ‘unsigned int visible()’ cannot have cv-qualifier
+  660 |   unsigned int visible() const {return !(flags_&INVISIBLE);}
+      |                          ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int visible()’:
+/usr/include/FL/Fl_Widget.H:660:42: error: ‘flags_’ was not declared in this scope
+  660 |   unsigned int visible() const {return !(flags_&INVISIBLE);}
+      |                                          ^~~~~~
+/usr/include/FL/Fl_Widget.H:660:49: error: ‘INVISIBLE’ was not declared in this scope
+  660 |   unsigned int visible() const {return !(flags_&INVISIBLE);}
+      |                                                 ^~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:666:19: error: non-member function ‘int visible_r()’ cannot have cv-qualifier
+  666 |   int visible_r() const;
+      |                   ^~~~~
+/usr/include/FL/Fl_Widget.H:685:3: error: ‘virtual’ outside class declaration
+  685 |   virtual void show();
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:690:3: error: ‘virtual’ outside class declaration
+  690 |   virtual void hide();
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void set_visible()’:
+/usr/include/FL/Fl_Widget.H:696:23: error: ‘flags_’ was not declared in this scope
+  696 |   void set_visible() {flags_ &= ~INVISIBLE;}
+      |                       ^~~~~~
+/usr/include/FL/Fl_Widget.H:696:34: error: ‘INVISIBLE’ was not declared in this scope
+  696 |   void set_visible() {flags_ &= ~INVISIBLE;}
+      |                                  ^~~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_visible()’:
+/usr/include/FL/Fl_Widget.H:702:25: error: ‘flags_’ was not declared in this scope
+  702 |   void clear_visible() {flags_ |= INVISIBLE;}
+      |                         ^~~~~~
+/usr/include/FL/Fl_Widget.H:702:35: error: ‘INVISIBLE’ was not declared in this scope
+  702 |   void clear_visible() {flags_ |= INVISIBLE;}
+      |                                   ^~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:708:25: error: non-member function ‘unsigned int active()’ cannot have cv-qualifier
+  708 |   unsigned int active() const {return !(flags_&INACTIVE);}
+      |                         ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int active()’:
+/usr/include/FL/Fl_Widget.H:708:41: error: ‘flags_’ was not declared in this scope
+  708 |   unsigned int active() const {return !(flags_&INACTIVE);}
+      |                                         ^~~~~~
+/usr/include/FL/Fl_Widget.H:708:48: error: ‘INACTIVE’ was not declared in this scope
+  708 |   unsigned int active() const {return !(flags_&INACTIVE);}
+      |                                                ^~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:714:18: error: non-member function ‘int active_r()’ cannot have cv-qualifier
+  714 |   int active_r() const;
+      |                  ^~~~~
+/usr/include/FL/Fl_Widget.H:747:25: error: non-member function ‘unsigned int output()’ cannot have cv-qualifier
+  747 |   unsigned int output() const {return (flags_&OUTPUT);}
+      |                         ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int output()’:
+/usr/include/FL/Fl_Widget.H:747:40: error: ‘flags_’ was not declared in this scope
+  747 |   unsigned int output() const {return (flags_&OUTPUT);}
+      |                                        ^~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void set_output()’:
+/usr/include/FL/Fl_Widget.H:752:22: error: ‘flags_’ was not declared in this scope
+  752 |   void set_output() {flags_ |= OUTPUT;}
+      |                      ^~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_output()’:
+/usr/include/FL/Fl_Widget.H:757:24: error: ‘flags_’ was not declared in this scope
+  757 |   void clear_output() {flags_ &= ~OUTPUT;}
+      |                        ^~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:764:30: error: non-member function ‘unsigned int takesevents()’ cannot have cv-qualifier
+  764 |   unsigned int takesevents() const {return !(flags_&(INACTIVE|INVISIBLE|OUTPUT));}
+      |                              ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int takesevents()’:
+/usr/include/FL/Fl_Widget.H:764:46: error: ‘flags_’ was not declared in this scope
+  764 |   unsigned int takesevents() const {return !(flags_&(INACTIVE|INVISIBLE|OUTPUT));}
+      |                                              ^~~~~~
+/usr/include/FL/Fl_Widget.H:764:54: error: ‘INACTIVE’ was not declared in this scope
+  764 |   unsigned int takesevents() const {return !(flags_&(INACTIVE|INVISIBLE|OUTPUT));}
+      |                                                      ^~~~~~~~
+/usr/include/FL/Fl_Widget.H:764:63: error: ‘INVISIBLE’ was not declared in this scope
+  764 |   unsigned int takesevents() const {return !(flags_&(INACTIVE|INVISIBLE|OUTPUT));}
+      |                                                               ^~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:781:26: error: non-member function ‘unsigned int changed()’ cannot have cv-qualifier
+  781 |   unsigned int changed() const {return flags_&CHANGED;}
+      |                          ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int changed()’:
+/usr/include/FL/Fl_Widget.H:781:40: error: ‘flags_’ was not declared in this scope
+  781 |   unsigned int changed() const {return flags_&CHANGED;}
+      |                                        ^~~~~~
+/usr/include/FL/Fl_Widget.H:781:47: error: ‘CHANGED’ was not declared in this scope
+  781 |   unsigned int changed() const {return flags_&CHANGED;}
+      |                                               ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void set_changed()’:
+/usr/include/FL/Fl_Widget.H:786:23: error: ‘flags_’ was not declared in this scope
+  786 |   void set_changed() {flags_ |= CHANGED;}
+      |                       ^~~~~~
+/usr/include/FL/Fl_Widget.H:786:33: error: ‘CHANGED’ was not declared in this scope
+  786 |   void set_changed() {flags_ |= CHANGED;}
+      |                                 ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_changed()’:
+/usr/include/FL/Fl_Widget.H:791:25: error: ‘flags_’ was not declared in this scope
+  791 |   void clear_changed() {flags_ &= ~CHANGED;}
+      |                         ^~~~~~
+/usr/include/FL/Fl_Widget.H:791:36: error: ‘CHANGED’ was not declared in this scope
+  791 |   void clear_changed() {flags_ &= ~CHANGED;}
+      |                                    ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_active()’:
+/usr/include/FL/Fl_Widget.H:797:24: error: ‘flags_’ was not declared in this scope
+  797 |   void clear_active() {flags_ |= INACTIVE;}
+      |                        ^~~~~~
+/usr/include/FL/Fl_Widget.H:797:34: error: ‘INACTIVE’ was not declared in this scope
+  797 |   void clear_active() {flags_ |= INACTIVE;}
+      |                                  ^~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void set_active()’:
+/usr/include/FL/Fl_Widget.H:803:22: error: ‘flags_’ was not declared in this scope
+  803 |   void set_active() {flags_ &= ~INACTIVE;}
+      |                      ^~~~~~
+/usr/include/FL/Fl_Widget.H:803:33: error: ‘INACTIVE’ was not declared in this scope
+  803 |   void set_active() {flags_ &= ~INACTIVE;}
+      |                                 ^~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void set_visible_focus()’:
+/usr/include/FL/Fl_Widget.H:820:30: error: ‘flags_’ was not declared in this scope
+  820 |   void set_visible_focus() { flags_ |= VISIBLE_FOCUS; }
+      |                              ^~~~~~
+/usr/include/FL/Fl_Widget.H:820:40: error: ‘VISIBLE_FOCUS’ was not declared in this scope
+  820 |   void set_visible_focus() { flags_ |= VISIBLE_FOCUS; }
+      |                                        ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_visible_focus()’:
+/usr/include/FL/Fl_Widget.H:826:32: error: ‘flags_’ was not declared in this scope
+  826 |   void clear_visible_focus() { flags_ &= ~VISIBLE_FOCUS; }
+      |                                ^~~~~~
+/usr/include/FL/Fl_Widget.H:826:43: error: ‘VISIBLE_FOCUS’ was not declared in this scope
+  826 |   void clear_visible_focus() { flags_ &= ~VISIBLE_FOCUS; }
+      |                                           ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘unsigned int visible_focus()’:
+/usr/include/FL/Fl_Widget.H:838:42: error: ‘flags_’ was not declared in this scope
+  838 |   unsigned int  visible_focus() { return flags_ & VISIBLE_FOCUS; }
+      |                                          ^~~~~~
+/usr/include/FL/Fl_Widget.H:838:51: error: ‘VISIBLE_FOCUS’ was not declared in this scope
+  838 |   unsigned int  visible_focus() { return flags_ & VISIBLE_FOCUS; }
+      |                                                   ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void do_callback()’:
+/usr/include/FL/Fl_Widget.H:861:35: error: invalid use of ‘this’ in non-member function
+  861 |   void do_callback() {do_callback(this,user_data_);}
+      |                                   ^~~~
+/usr/include/FL/Fl_Widget.H:861:40: error: ‘user_data_’ was not declared in this scope; did you mean ‘user_data’?
+  861 |   void do_callback() {do_callback(this,user_data_);}
+      |                                        ^~~~~~~~~~
+      |                                        user_data
+/usr/include/FL/Fl_Widget.H: In function ‘void do_callback(Fl_Widget*, long int)’:
+/usr/include/FL/Fl_Widget.H:869:58: error: invalid conversion from ‘void*’ to ‘long int’ [-fpermissive]
+  869 |   void do_callback(Fl_Widget* o,long arg) {do_callback(o,(void*)(fl_intptr_t)arg);}
+      |                                                          ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                          |
+      |                                                          void*
+/usr/include/FL/Fl_Widget.H:869:38: note:   initializing argument 2 of ‘void do_callback(Fl_Widget*, long int)’
+  869 |   void do_callback(Fl_Widget* o,long arg) {do_callback(o,(void*)(fl_intptr_t)arg);}
+      |                                 ~~~~~^~~
+/usr/include/FL/Fl_Widget.H: In function ‘void _set_fullscreen()’:
+/usr/include/FL/Fl_Widget.H:882:27: error: ‘flags_’ was not declared in this scope
+  882 |   void _set_fullscreen() {flags_ |= FULLSCREEN;}
+      |                           ^~~~~~
+/usr/include/FL/Fl_Widget.H:882:37: error: ‘FULLSCREEN’ was not declared in this scope; did you mean ‘FL_SCREEN’?
+  882 |   void _set_fullscreen() {flags_ |= FULLSCREEN;}
+      |                                     ^~~~~~~~~~
+      |                                     FL_SCREEN
+/usr/include/FL/Fl_Widget.H: In function ‘void _clear_fullscreen()’:
+/usr/include/FL/Fl_Widget.H:883:29: error: ‘flags_’ was not declared in this scope
+  883 |   void _clear_fullscreen() {flags_ &= ~FULLSCREEN;}
+      |                             ^~~~~~
+/usr/include/FL/Fl_Widget.H:883:40: error: ‘FULLSCREEN’ was not declared in this scope; did you mean ‘FL_SCREEN’?
+  883 |   void _clear_fullscreen() {flags_ &= ~FULLSCREEN;}
+      |                                        ^~~~~~~~~~
+      |                                        FL_SCREEN
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:890:36: error: non-member function ‘int contains(const Fl_Widget*)’ cannot have cv-qualifier
+  890 |   int contains(const Fl_Widget *w) const ;
+      |                                    ^~~~~
+/usr/include/FL/Fl_Widget.H:898:36: error: non-member function ‘int inside(const Fl_Widget*)’ cannot have cv-qualifier
+  898 |   int inside(const Fl_Widget* wgt) const {return wgt ? wgt->contains(this) : 0;}
+      |                                    ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int inside(const Fl_Widget*)’:
+/usr/include/FL/Fl_Widget.H:898:61: error: ‘const class Fl_Widget’ has no member named ‘contains’
+  898 |   int inside(const Fl_Widget* wgt) const {return wgt ? wgt->contains(this) : 0;}
+      |                                                             ^~~~~~~~
+/usr/include/FL/Fl_Widget.H:898:70: error: invalid use of ‘this’ in non-member function
+  898 |   int inside(const Fl_Widget* wgt) const {return wgt ? wgt->contains(this) : 0;}
+      |                                                                      ^~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:917:18: error: non-member function ‘uchar damage()’ cannot have cv-qualifier
+  917 |   uchar damage() const {return damage_;}
+      |                  ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘uchar damage()’:
+/usr/include/FL/Fl_Widget.H:917:32: error: ‘damage_’ was not declared in this scope; did you mean ‘damage’?
+  917 |   uchar damage() const {return damage_;}
+      |                                ^~~~~~~
+      |                                damage
+/usr/include/FL/Fl_Widget.H: In function ‘void clear_damage(uchar)’:
+/usr/include/FL/Fl_Widget.H:931:35: error: ‘damage_’ was not declared in this scope; did you mean ‘damage’?
+  931 |   void clear_damage(uchar c = 0) {damage_ = c;}
+      |                                   ^~~~~~~
+      |                                   damage
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:948:49: error: non-member function ‘void draw_label(int, int, int, int, Fl_Align)’ cannot have cv-qualifier
+  948 |   void draw_label(int, int, int, int, Fl_Align) const;
+      |                                                 ^~~~~
+/usr/include/FL/Fl_Widget.H:957:40: error: non-member function ‘void measure_label(int&, int&)’ cannot have cv-qualifier
+  957 |   void measure_label(int& ww, int& hh) const {label_.measure(ww, hh);}
+      |                                        ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘void measure_label(int&, int&)’:
+/usr/include/FL/Fl_Widget.H:957:47: error: ‘label_’ was not declared in this scope; did you mean ‘label’?
+  957 |   void measure_label(int& ww, int& hh) const {label_.measure(ww, hh);}
+      |                                               ^~~~~~
+      |                                               label
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:959:23: error: non-member function ‘Fl_Window* window()’ cannot have cv-qualifier
+  959 |   Fl_Window* window() const ;
+      |                       ^~~~~
+/usr/include/FL/Fl_Widget.H:960:27: error: non-member function ‘Fl_Window* top_window()’ cannot have cv-qualifier
+  960 |   Fl_Window* top_window() const;
+      |                           ^~~~~
+/usr/include/FL/Fl_Widget.H:961:54: error: non-member function ‘Fl_Window* top_window_offset(int&, int&)’ cannot have cv-qualifier
+  961 |   Fl_Window* top_window_offset(int& xoff, int& yoff) const;
+      |                                                      ^~~~~
+/usr/include/FL/Fl_Widget.H:986:3: error: ‘virtual’ outside class declaration
+  986 |   virtual Fl_Group* as_group() {return 0;}
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:1000:3: error: ‘virtual’ outside class declaration
+ 1000 |   virtual Fl_Window* as_window() {return 0;}
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H:1012:3: error: ‘virtual’ outside class declaration
+ 1012 |   virtual class Fl_Gl_Window* as_gl_window() {return 0;}
+      |   ^~~~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘int use_accents_menu()’:
+/usr/include/FL/Fl_Widget.H:1016:35: error: ‘flags’ was not declared in this scope
+ 1016 |   int use_accents_menu() { return flags() & MAC_USE_ACCENTS_MENU; }
+      |                                   ^~~~~
+/usr/include/FL/Fl_Widget.H:1016:45: error: ‘MAC_USE_ACCENTS_MENU’ was not declared in this scope
+ 1016 |   int use_accents_menu() { return flags() & MAC_USE_ACCENTS_MENU; }
+      |                                             ^~~~~~~~~~~~~~~~~~~~
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:1021:21: error: non-member function ‘Fl_Color color2()’ cannot have cv-qualifier
+ 1021 |   Fl_Color color2() const {return (Fl_Color)color2_;}
+      |                     ^~~~~
+/usr/include/FL/Fl_Widget.H: In function ‘Fl_Color color2()’:
+/usr/include/FL/Fl_Widget.H:1021:45: error: ‘color2_’ was not declared in this scope; did you mean ‘color2’?
+ 1021 |   Fl_Color color2() const {return (Fl_Color)color2_;}
+      |                                             ^~~~~~~
+      |                                             color2
+/usr/include/FL/Fl_Widget.H: In function ‘void color2(unsigned int)’:
+/usr/include/FL/Fl_Widget.H:1026:28: error: ‘color2_’ was not declared in this scope; did you mean ‘color2’?
+ 1026 |   void color2(unsigned a) {color2_ = a;}
+      |                            ^~~~~~~
+      |                            color2
+/usr/include/FL/Fl_Widget.H: At global scope:
+/usr/include/FL/Fl_Widget.H:1027:1: error: expected declaration before ‘}’ token
+ 1027 | };
+      | ^
+/usr/include/FL/Fl_Group.H: In member function ‘void Fl_Group::clip_children(int)’:
+/usr/include/FL/Fl_Group.H:168:47: error: ‘CLIP_CHILDREN’ was not declared in this scope
+  168 |   void clip_children(int c) { if (c) set_flag(CLIP_CHILDREN); else clear_flag(CLIP_CHILDREN); }
+      |                                               ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Group.H:168:79: error: ‘CLIP_CHILDREN’ was not declared in this scope
+  168 |   void clip_children(int c) { if (c) set_flag(CLIP_CHILDREN); else clear_flag(CLIP_CHILDREN); }
+      |                                                                               ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Group.H: In member function ‘unsigned int Fl_Group::clip_children()’:
+/usr/include/FL/Fl_Group.H:176:52: error: ‘CLIP_CHILDREN’ was not declared in this scope
+  176 |   unsigned int clip_children() { return (flags() & CLIP_CHILDREN) != 0; }
+      |                                                    ^~~~~~~~~~~~~
+/usr/include/FL/Fl_Group.H: In member function ‘void Fl_Group::focus(Fl_Widget*)’:
+/usr/include/FL/Fl_Group.H:188:32: error: ‘class Fl_Widget’ has no member named ‘take_focus’
+  188 |   void focus(Fl_Widget* W) {W->take_focus();}
+      |                                ^~~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::force_position(int)’:
+/usr/include/FL/Fl_Window.H:182:25: error: ‘FORCE_POSITION’ was not declared in this scope
+  182 |     if (force) set_flag(FORCE_POSITION);
+      |                         ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H:183:21: error: ‘FORCE_POSITION’ was not declared in this scope
+  183 |     else clear_flag(FORCE_POSITION);
+      |                     ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘int Fl_Window::force_position() const’:
+/usr/include/FL/Fl_Window.H:193:51: error: ‘FORCE_POSITION’ was not declared in this scope
+  193 |   int force_position() const { return ((flags() & FORCE_POSITION)?1:0); }
+      |                                                   ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::clear_border()’:
+/usr/include/FL/Fl_Window.H:274:35: error: ‘NOBORDER’ was not declared in this scope
+  274 |   void clear_border()   {set_flag(NOBORDER);}
+      |                                   ^~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::border() const’:
+/usr/include/FL/Fl_Window.H:276:53: error: ‘NOBORDER’ was not declared in this scope
+  276 |   unsigned int border() const   {return !(flags() & NOBORDER);}
+      |                                                     ^~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::set_override()’:
+/usr/include/FL/Fl_Window.H:278:35: error: ‘NOBORDER’ was not declared in this scope
+  278 |   void set_override()   {set_flag(NOBORDER|OVERRIDE);}
+      |                                   ^~~~~~~~
+/usr/include/FL/Fl_Window.H:278:44: error: ‘OVERRIDE’ was not declared in this scope
+  278 |   void set_override()   {set_flag(NOBORDER|OVERRIDE);}
+      |                                            ^~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::override() const’:
+/usr/include/FL/Fl_Window.H:280:51: error: ‘OVERRIDE’ was not declared in this scope
+  280 |   unsigned int override() const  { return flags()&OVERRIDE; }
+      |                                                   ^~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::set_modal()’:
+/usr/include/FL/Fl_Window.H:289:35: error: ‘MODAL’ was not declared in this scope
+  289 |   void set_modal()      {set_flag(MODAL);}
+      |                                   ^~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::modal() const’:
+/usr/include/FL/Fl_Window.H:291:51: error: ‘MODAL’ was not declared in this scope
+  291 |   unsigned int modal() const    {return flags() & MODAL;}
+      |                                                   ^~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::set_non_modal()’:
+/usr/include/FL/Fl_Window.H:298:35: error: ‘NON_MODAL’ was not declared in this scope
+  298 |   void set_non_modal()  {set_flag(NON_MODAL);}
+      |                                   ^~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::non_modal() const’:
+/usr/include/FL/Fl_Window.H:300:53: error: ‘NON_MODAL’ was not declared in this scope
+  300 |   unsigned int non_modal() const {return flags() & (NON_MODAL|MODAL);}
+      |                                                     ^~~~~~~~~
+/usr/include/FL/Fl_Window.H:300:63: error: ‘MODAL’ was not declared in this scope
+  300 |   unsigned int non_modal() const {return flags() & (NON_MODAL|MODAL);}
+      |                                                               ^~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::clear_modal_states()’:
+/usr/include/FL/Fl_Window.H:339:41: error: ‘NON_MODAL’ was not declared in this scope
+  339 |   void clear_modal_states() {clear_flag(NON_MODAL | MODAL);}
+      |                                         ^~~~~~~~~
+/usr/include/FL/Fl_Window.H:339:53: error: ‘MODAL’ was not declared in this scope
+  339 |   void clear_modal_states() {clear_flag(NON_MODAL | MODAL);}
+      |                                                     ^~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::set_menu_window()’:
+/usr/include/FL/Fl_Window.H:354:43: error: ‘MENU_WINDOW’ was not declared in this scope; did you mean ‘FL_WINDOW’?
+  354 |   void set_menu_window()        {set_flag(MENU_WINDOW);}
+      |                                           ^~~~~~~~~~~
+      |                                           FL_WINDOW
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::menu_window() const’:
+/usr/include/FL/Fl_Window.H:357:54: error: ‘MENU_WINDOW’ was not declared in this scope; did you mean ‘FL_WINDOW’?
+  357 |   unsigned int menu_window() const {return flags() & MENU_WINDOW;}
+      |                                                      ^~~~~~~~~~~
+      |                                                      FL_WINDOW
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::set_tooltip_window()’:
+/usr/include/FL/Fl_Window.H:375:44: error: ‘TOOLTIP_WINDOW’ was not declared in this scope
+  375 |   void set_tooltip_window()     { set_flag(TOOLTIP_WINDOW);
+      |                                            ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H:376:46: error: ‘MENU_WINDOW’ was not declared in this scope; did you mean ‘FL_WINDOW’?
+  376 |                                   clear_flag(MENU_WINDOW); }
+      |                                              ^~~~~~~~~~~
+      |                                              FL_WINDOW
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::tooltip_window() const’:
+/usr/include/FL/Fl_Window.H:378:57: error: ‘TOOLTIP_WINDOW’ was not declared in this scope
+  378 |   unsigned int tooltip_window() const {return flags() & TOOLTIP_WINDOW;}
+      |                                                         ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘void Fl_Window::free_position()’:
+/usr/include/FL/Fl_Window.H:401:37: error: ‘FORCE_POSITION’ was not declared in this scope
+  401 |   void free_position()  {clear_flag(FORCE_POSITION);}
+      |                                     ^~~~~~~~~~~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘const char* Fl_Window::label() const’:
+/usr/include/FL/Fl_Window.H:450:52: error: ‘label’ is not a member of ‘Fl_Widget’
+  450 |   const char* label() const     {return Fl_Widget::label();}
+      |                                                    ^~~~~
+/usr/include/FL/Fl_Window.H: In member function ‘unsigned int Fl_Window::fullscreen_active() const’:
+/usr/include/FL/Fl_Window.H:567:61: error: ‘FULLSCREEN’ was not declared in this scope; did you mean ‘FL_SCREEN’?
+  567 |   unsigned int fullscreen_active() const { return flags() & FULLSCREEN; }
+      |                                                             ^~~~~~~~~~
+      |                                                             FL_SCREEN
+main.cpp: At global scope:
+main.cpp:58:10: error: ‘void RpmGauge::draw()’ marked ‘override’, but does not override
+   58 |     void draw() override {
+      |          ^~~~
+main.cpp: In member function ‘void RpmGauge::draw()’:
+main.cpp:60:19: error: no matching function for call to ‘RpmGauge::x()’
+   60 |         fl_rectf(x(), y(), w(), h());
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:60:24: error: no matching function for call to ‘RpmGauge::y()’
+   60 |         fl_rectf(x(), y(), w(), h());
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:60:29: error: no matching function for call to ‘RpmGauge::w()’
+   60 |         fl_rectf(x(), y(), w(), h());
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:60:34: error: no matching function for call to ‘RpmGauge::h()’
+   60 |         fl_rectf(x(), y(), w(), h());
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:63:25: error: no matching function for call to ‘RpmGauge::x()’
+   63 |         const int cx = x() + w() / 2;
+      |                        ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:63:31: error: no matching function for call to ‘RpmGauge::w()’
+   63 |         const int cx = x() + w() / 2;
+      |                              ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:64:25: error: no matching function for call to ‘RpmGauge::y()’
+   64 |         const int cy = y() + h() - 10;
+      |                        ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:64:31: error: no matching function for call to ‘RpmGauge::h()’
+   64 |         const int cy = y() + h() - 10;
+      |                              ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:65:34: error: no matching function for call to ‘RpmGauge::w()’
+   65 |         const int r  = std::min(w() / 2 - 10, h() - 22);
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:65:48: error: no matching function for call to ‘RpmGauge::h()’
+   65 |         const int r  = std::min(w() / 2 - 10, h() - 22);
+      |                                               ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:67:23: error: no matching function for call to ‘RpmGauge::x()’
+   67 |         fl_push_clip(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:67:28: error: no matching function for call to ‘RpmGauge::y()’
+   67 |         fl_push_clip(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:67:33: error: no matching function for call to ‘RpmGauge::w()’
+   67 |         fl_push_clip(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:67:38: error: no matching function for call to ‘RpmGauge::h()’
+   67 |         fl_push_clip(x(), y(), w(), h());
+      |                                     ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:105:43: error: no matching function for call to ‘RpmGauge::y()’
+  105 |         fl_draw("ENGINE RPM", cx - tw/2, y() + 14);
+      |                                          ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:143:18: error: no matching function for call to ‘RpmGauge::x()’
+  143 |         fl_rect(x(), y(), w(), h());
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:143:23: error: no matching function for call to ‘RpmGauge::y()’
+  143 |         fl_rect(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:143:28: error: no matching function for call to ‘RpmGauge::w()’
+  143 |         fl_rect(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:143:33: error: no matching function for call to ‘RpmGauge::h()’
+  143 |         fl_rect(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: At global scope:
+main.cpp:168:10: error: ‘void InfoBox::draw()’ marked ‘override’, but does not override
+  168 |     void draw() override {
+      |          ^~~~
+main.cpp: In member function ‘void InfoBox::draw()’:
+main.cpp:170:19: error: no matching function for call to ‘InfoBox::x()’
+  170 |         fl_rectf(x(), y(), w(), h());
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:170:24: error: no matching function for call to ‘InfoBox::y()’
+  170 |         fl_rectf(x(), y(), w(), h());
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:170:29: error: no matching function for call to ‘InfoBox::w()’
+  170 |         fl_rectf(x(), y(), w(), h());
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:170:34: error: no matching function for call to ‘InfoBox::h()’
+  170 |         fl_rectf(x(), y(), w(), h());
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:173:19: error: no matching function for call to ‘InfoBox::x()’
+  173 |         fl_rectf(x(), y(), w(), 4);
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:173:24: error: no matching function for call to ‘InfoBox::y()’
+  173 |         fl_rectf(x(), y(), w(), 4);
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:173:29: error: no matching function for call to ‘InfoBox::w()’
+  173 |         fl_rectf(x(), y(), w(), 4);
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:178:24: error: no matching function for call to ‘InfoBox::x()’
+  178 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 22);
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:178:30: error: no matching function for call to ‘InfoBox::w()’
+  178 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 22);
+      |                             ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:178:44: error: no matching function for call to ‘InfoBox::y()’
+  178 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 22);
+      |                                           ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:190:23: error: no matching function for call to ‘InfoBox::x()’
+  190 |         fl_draw(buf, x() + w()/2 - vw/2, y() + h()/2 + 18);
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:190:29: error: no matching function for call to ‘InfoBox::w()’
+  190 |         fl_draw(buf, x() + w()/2 - vw/2, y() + h()/2 + 18);
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:190:43: error: no matching function for call to ‘InfoBox::y()’
+  190 |         fl_draw(buf, x() + w()/2 - vw/2, y() + h()/2 + 18);
+      |                                          ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:190:49: error: no matching function for call to ‘InfoBox::h()’
+  190 |         fl_draw(buf, x() + w()/2 - vw/2, y() + h()/2 + 18);
+      |                                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:195:25: error: no matching function for call to ‘InfoBox::x()’
+  195 |         fl_draw(_unit, x() + w()/2 - uw/2, y() + h() - 10);
+      |                        ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:195:31: error: no matching function for call to ‘InfoBox::w()’
+  195 |         fl_draw(_unit, x() + w()/2 - uw/2, y() + h() - 10);
+      |                              ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:195:45: error: no matching function for call to ‘InfoBox::y()’
+  195 |         fl_draw(_unit, x() + w()/2 - uw/2, y() + h() - 10);
+      |                                            ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:195:51: error: no matching function for call to ‘InfoBox::h()’
+  195 |         fl_draw(_unit, x() + w()/2 - uw/2, y() + h() - 10);
+      |                                                  ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:198:18: error: no matching function for call to ‘InfoBox::x()’
+  198 |         fl_rect(x(), y(), w(), h());
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:198:23: error: no matching function for call to ‘InfoBox::y()’
+  198 |         fl_rect(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:198:28: error: no matching function for call to ‘InfoBox::w()’
+  198 |         fl_rect(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:198:33: error: no matching function for call to ‘InfoBox::h()’
+  198 |         fl_rect(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: At global scope:
+main.cpp:218:10: error: ‘void SignalLED::draw()’ marked ‘override’, but does not override
+  218 |     void draw() override {
+      |          ^~~~
+main.cpp: In member function ‘void SignalLED::draw()’:
+main.cpp:220:19: error: no matching function for call to ‘SignalLED::x()’
+  220 |         fl_rectf(x(), y(), w(), h());
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:220:24: error: no matching function for call to ‘SignalLED::y()’
+  220 |         fl_rectf(x(), y(), w(), h());
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:220:29: error: no matching function for call to ‘SignalLED::w()’
+  220 |         fl_rectf(x(), y(), w(), h());
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:220:34: error: no matching function for call to ‘SignalLED::h()’
+  220 |         fl_rectf(x(), y(), w(), h());
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:226:24: error: no matching function for call to ‘SignalLED::x()’
+  226 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 16);
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:226:30: error: no matching function for call to ‘SignalLED::w()’
+  226 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 16);
+      |                             ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:226:44: error: no matching function for call to ‘SignalLED::y()’
+  226 |         fl_draw(_lbl, x() + w()/2 - lw/2, y() + 16);
+      |                                           ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:230:24: error: no matching function for call to ‘SignalLED::w()’
+  230 |         int avail_w = w() - 2*margin;
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:231:24: error: no matching function for call to ‘SignalLED::h()’
+  231 |         int avail_h = h() - 32; // below label, above bottom margin
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:234:19: error: no matching function for call to ‘SignalLED::x()’
+  234 |         int lx = x() + w()/2 - dia/2;
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:234:25: error: no matching function for call to ‘SignalLED::w()’
+  234 |         int lx = x() + w()/2 - dia/2;
+      |                        ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:235:19: error: no matching function for call to ‘SignalLED::y()’
+  235 |         int ly = y() + 20 + (avail_h - dia)/2;
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:254:26: error: no matching function for call to ‘SignalLED::x()’
+  254 |         fl_draw(st_lbl, x() + w()/2 - sw/2, y() + h() - 6);
+      |                         ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:254:32: error: no matching function for call to ‘SignalLED::w()’
+  254 |         fl_draw(st_lbl, x() + w()/2 - sw/2, y() + h() - 6);
+      |                               ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:254:46: error: no matching function for call to ‘SignalLED::y()’
+  254 |         fl_draw(st_lbl, x() + w()/2 - sw/2, y() + h() - 6);
+      |                                             ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:254:52: error: no matching function for call to ‘SignalLED::h()’
+  254 |         fl_draw(st_lbl, x() + w()/2 - sw/2, y() + h() - 6);
+      |                                                   ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:257:18: error: no matching function for call to ‘SignalLED::x()’
+  257 |         fl_rect(x(), y(), w(), h());
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:257:23: error: no matching function for call to ‘SignalLED::y()’
+  257 |         fl_rect(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:257:28: error: no matching function for call to ‘SignalLED::w()’
+  257 |         fl_rect(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:257:33: error: no matching function for call to ‘SignalLED::h()’
+  257 |         fl_rect(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: At global scope:
+main.cpp:276:10: error: ‘void CylBox::draw()’ marked ‘override’, but does not override
+  276 |     void draw() override {
+      |          ^~~~
+main.cpp: In member function ‘void CylBox::draw()’:
+main.cpp:278:19: error: no matching function for call to ‘CylBox::x()’
+  278 |         fl_rectf(x(), y(), w(), h());
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:278:24: error: no matching function for call to ‘CylBox::y()’
+  278 |         fl_rectf(x(), y(), w(), h());
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:278:29: error: no matching function for call to ‘CylBox::w()’
+  278 |         fl_rectf(x(), y(), w(), h());
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:278:34: error: no matching function for call to ‘CylBox::h()’
+  278 |         fl_rectf(x(), y(), w(), h());
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:288:19: error: no matching function for call to ‘CylBox::x()’
+  288 |         fl_rectf(x(), y(), w(), 4);
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:288:24: error: no matching function for call to ‘CylBox::y()’
+  288 |         fl_rectf(x(), y(), w(), 4);
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:288:29: error: no matching function for call to ‘CylBox::w()’
+  288 |         fl_rectf(x(), y(), w(), 4);
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:295:25: error: no matching function for call to ‘CylBox::x()’
+  295 |         fl_draw(title, x() + w()/2 - tw/2, y() + 18);
+      |                        ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:295:31: error: no matching function for call to ‘CylBox::w()’
+  295 |         fl_draw(title, x() + w()/2 - tw/2, y() + 18);
+      |                              ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:295:45: error: no matching function for call to ‘CylBox::y()’
+  295 |         fl_draw(title, x() + w()/2 - tw/2, y() + 18);
+      |                                            ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:299:20: error: no matching function for call to ‘CylBox::x()’
+  299 |         int lx1 = x() + 14, ly1 = y() + 26;
+      |                   ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:301:23: error: ‘ly1’ was not declared in this scope; did you mean ‘y1’?
+  301 |         fl_pie(lx1-2, ly1-2, dia+4, dia+4, 0, 360);
+      |                       ^~~
+      |                       y1
+main.cpp:313:20: error: no matching function for call to ‘CylBox::x()’
+  313 |         int lx2 = x() + 60, ly2 = y() + 26;
+      |                   ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:315:23: error: ‘ly2’ was not declared in this scope; did you mean ‘lx2’?
+  315 |         fl_pie(lx2-2, ly2-2, dia+4, dia+4, 0, 360);
+      |                       ^~~
+      |                       lx2
+main.cpp:335:23: error: no matching function for call to ‘CylBox::x()’
+  335 |         int bar_x  = x() + 108;
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:336:23: error: no matching function for call to ‘CylBox::w()’
+  336 |         int bar_w  = w() - 118;
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:337:29: error: no matching function for call to ‘CylBox::y()’
+  337 |         fl_draw(lb, bar_x, y() + 52);
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:342:33: error: no matching function for call to ‘CylBox::y()’
+  342 |         int   bx = bar_x, by = y() + 60, bh = 12;
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:344:33: error: ‘bh’ was not declared in this scope; did you mean ‘h’?
+  344 |         fl_rectf(bx, by, bar_w, bh);
+      |                                 ^~
+      |                                 h
+main.cpp:355:18: error: no matching function for call to ‘CylBox::x()’
+  355 |         fl_rect(x(), y(), w(), h());
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:355:23: error: no matching function for call to ‘CylBox::y()’
+  355 |         fl_rect(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:355:28: error: no matching function for call to ‘CylBox::w()’
+  355 |         fl_rect(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:355:33: error: no matching function for call to ‘CylBox::h()’
+  355 |         fl_rect(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: At global scope:
+main.cpp:369:10: error: ‘void RpmBar::draw()’ marked ‘override’, but does not override
+  369 |     void draw() override {
+      |          ^~~~
+main.cpp: In member function ‘void RpmBar::draw()’:
+main.cpp:371:19: error: no matching function for call to ‘RpmBar::x()’
+  371 |         fl_rectf(x(), y(), w(), h());
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:371:24: error: no matching function for call to ‘RpmBar::y()’
+  371 |         fl_rectf(x(), y(), w(), h());
+      |                       ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:371:29: error: no matching function for call to ‘RpmBar::w()’
+  371 |         fl_rectf(x(), y(), w(), h());
+      |                            ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:371:34: error: no matching function for call to ‘RpmBar::h()’
+  371 |         fl_rectf(x(), y(), w(), h());
+      |                                 ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:374:37: error: no matching function for call to ‘RpmBar::w()’
+  374 |         int   fill = (int)(frac * (w()-2));
+      |                                    ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:380:19: error: no matching function for call to ‘RpmBar::x()’
+  380 |         fl_rectf(x()+1, y()+1, fill, h()-2);
+      |                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:380:26: error: no matching function for call to ‘RpmBar::y()’
+  380 |         fl_rectf(x()+1, y()+1, fill, h()-2);
+      |                         ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:380:39: error: no matching function for call to ‘RpmBar::h()’
+  380 |         fl_rectf(x()+1, y()+1, fill, h()-2);
+      |                                      ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:383:46: error: no matching function for call to ‘RpmBar::w()’
+  383 |         int rl = (int)((6500.0f/8000.0f) * (w()-2));
+      |                                             ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:386:18: error: no matching function for call to ‘RpmBar::x()’
+  386 |         fl_line(x()+1+rl, y()+1, x()+1+rl, y()+h()-2);
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:386:28: error: no matching function for call to ‘RpmBar::y()’
+  386 |         fl_line(x()+1+rl, y()+1, x()+1+rl, y()+h()-2);
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:386:35: error: no matching function for call to ‘RpmBar::x()’
+  386 |         fl_line(x()+1+rl, y()+1, x()+1+rl, y()+h()-2);
+      |                                  ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:386:45: error: no matching function for call to ‘RpmBar::y()’
+  386 |         fl_line(x()+1+rl, y()+1, x()+1+rl, y()+h()-2);
+      |                                            ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:386:49: error: no matching function for call to ‘RpmBar::h()’
+  386 |         fl_line(x()+1+rl, y()+1, x()+1+rl, y()+h()-2);
+      |                                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:390:18: error: no matching function for call to ‘RpmBar::x()’
+  390 |         fl_rect(x(), y(), w(), h());
+      |                 ~^~
+/usr/include/FL/Fl_Widget.H:139:8: note: candidate: ‘void Fl_Widget::x(int)’
+  139 |   void x(int v) {x_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:139:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:390:23: error: no matching function for call to ‘RpmBar::y()’
+  390 |         fl_rect(x(), y(), w(), h());
+      |                      ~^~
+/usr/include/FL/Fl_Widget.H:141:8: note: candidate: ‘void Fl_Widget::y(int)’
+  141 |   void y(int v) {y_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:141:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:390:28: error: no matching function for call to ‘RpmBar::w()’
+  390 |         fl_rect(x(), y(), w(), h());
+      |                           ~^~
+/usr/include/FL/Fl_Widget.H:143:8: note: candidate: ‘void Fl_Widget::w(int)’
+  143 |   void w(int v) {w_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:143:8: note:   candidate expects 1 argument, 0 provided
+main.cpp:390:33: error: no matching function for call to ‘RpmBar::h()’
+  390 |         fl_rect(x(), y(), w(), h());
+      |                                ~^~
+/usr/include/FL/Fl_Widget.H:145:8: note: candidate: ‘void Fl_Widget::h(int)’
+  145 |   void h(int v) {h_ = v;}
+      |        ^
+/usr/include/FL/Fl_Widget.H:145:8: note:   candidate expects 1 argument, 0 provided
+main.cpp: In function ‘void ui_timer_cb(void*)’:
+main.cpp:429:22: error: ‘class Fl_Toggle_Button’ has no member named ‘label’; did you mean ‘Fl_Label Fl_Widget::label_’? (not accessible from this context)
+  429 |         g_start_btn->label("START ENGINE");
+      |                      ^~~~~
+/usr/include/FL/Fl_Widget.H:108:12: note: declared private here
+  108 |   Fl_Label label_;
+      |            ^~~~~~
+main.cpp:430:22: error: ‘class Fl_Toggle_Button’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  430 |         g_start_btn->color(fl_rgb_color(0,110,55));
+      |                      ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:443:15: error: ‘class Fl_Box’ has no member named ‘copy_label’
+  443 |     g_status->copy_label(sbuf);
+      |               ^~~~~~~~~~
+main.cpp: In function ‘void start_cb(Fl_Widget*, void*)’:
+main.cpp:462:29: error: ‘class Fl_Toggle_Button’ has no member named ‘label’; did you mean ‘Fl_Label Fl_Widget::label_’? (not accessible from this context)
+  462 |     ((Fl_Toggle_Button*)w)->label(pressed ? "STARTER ON  \u23F5" : "START ENGINE");
+      |                             ^~~~~
+/usr/include/FL/Fl_Widget.H:108:12: note: declared private here
+  108 |   Fl_Label label_;
+      |            ^~~~~~
+main.cpp:463:29: error: ‘class Fl_Toggle_Button’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  463 |     ((Fl_Toggle_Button*)w)->color(
+      |                             ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp: In function ‘Fl_Box* make_label(int, int, int, int, const char*)’:
+main.cpp:486:8: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  486 |     b->box(FL_NO_BOX);
+      |        ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:487:8: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  487 |     b->labelcolor(fl_rgb_color(145, 148, 165));
+      |        ^~~~~~~~~~
+main.cpp:488:8: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  488 |     b->labelsize(11);
+      |        ^~~~~~~~~
+main.cpp:489:8: error: ‘class Fl_Box’ has no member named ‘labelfont’
+  489 |     b->labelfont(FL_HELVETICA_BOLD);
+      |        ^~~~~~~~~
+main.cpp:490:8: error: ‘class Fl_Box’ has no member named ‘align’
+  490 |     b->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+      |        ^~~~~
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:563:10: error: ‘class Fl_Double_Window’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  563 |     win->color(fl_rgb_color(35, 35, 43));
+      |          ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:614:17: error: ‘class Fl_Value_Slider’ has no member named ‘type’; did you mean ‘uchar Fl_Widget::type_’? (not accessible from this context)
+  614 |     g_throttle->type(FL_HOR_FILL_SLIDER);
+      |                 ^~~~
+/usr/include/FL/Fl_Widget.H:112:9: note: declared private here
+  112 |   uchar type_;
+      |         ^~~~~
+main.cpp:618:17: error: ‘class Fl_Value_Slider’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  618 |     g_throttle->color(fl_rgb_color(38, 42, 55));
+      |                 ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:619:17: error: ‘class Fl_Value_Slider’ has no member named ‘selection_color’
+  619 |     g_throttle->selection_color(fl_rgb_color(0, 160, 70));
+      |                 ^~~~~~~~~~~~~~~
+main.cpp:620:17: error: ‘class Fl_Value_Slider’ has no member named ‘labelsize’
+  620 |     g_throttle->labelsize(10);
+      |                 ^~~~~~~~~
+main.cpp:621:17: error: ‘class Fl_Value_Slider’ has no member named ‘callback’; did you mean ‘void (* Fl_Widget::callback_)(Fl_Widget*, void*)’? (not accessible from this context)
+  621 |     g_throttle->callback(throttle_cb);
+      |                 ^~~~~~~~
+/usr/include/FL/Fl_Widget.H:105:16: note: declared private here
+  105 |   Fl_Callback* callback_;
+      |                ^~~~~~~~~
+main.cpp:624:12: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  624 |         b->box(FL_NO_BOX);
+      |            ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:625:12: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  625 |         b->labelcolor(fl_rgb_color(140, 143, 158));
+      |            ^~~~~~~~~~
+main.cpp:626:12: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  626 |         b->labelsize(10);
+      |            ^~~~~~~~~
+main.cpp:632:13: error: ‘class Fl_Value_Slider’ has no member named ‘type’; did you mean ‘uchar Fl_Widget::type_’? (not accessible from this context)
+  632 |     g_load->type(FL_HOR_FILL_SLIDER);
+      |             ^~~~
+/usr/include/FL/Fl_Widget.H:112:9: note: declared private here
+  112 |   uchar type_;
+      |         ^~~~~
+main.cpp:636:13: error: ‘class Fl_Value_Slider’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  636 |     g_load->color(fl_rgb_color(38, 42, 55));
+      |             ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:637:13: error: ‘class Fl_Value_Slider’ has no member named ‘selection_color’
+  637 |     g_load->selection_color(fl_rgb_color(180, 100, 0));
+      |             ^~~~~~~~~~~~~~~
+main.cpp:638:13: error: ‘class Fl_Value_Slider’ has no member named ‘labelsize’
+  638 |     g_load->labelsize(10);
+      |             ^~~~~~~~~
+main.cpp:639:13: error: ‘class Fl_Value_Slider’ has no member named ‘callback’; did you mean ‘void (* Fl_Widget::callback_)(Fl_Widget*, void*)’? (not accessible from this context)
+  639 |     g_load->callback(load_cb);
+      |             ^~~~~~~~
+/usr/include/FL/Fl_Widget.H:105:16: note: declared private here
+  105 |   Fl_Callback* callback_;
+      |                ^~~~~~~~~
+main.cpp:642:12: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  642 |         b->box(FL_NO_BOX);
+      |            ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:643:12: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  643 |         b->labelcolor(fl_rgb_color(140, 143, 158));
+      |            ^~~~~~~~~~
+main.cpp:644:12: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  644 |         b->labelsize(10);
+      |            ^~~~~~~~~
+main.cpp:649:18: error: ‘class Fl_Toggle_Button’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  649 |     g_start_btn->color(fl_rgb_color(0, 110, 55));
+      |                  ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:650:18: error: ‘class Fl_Toggle_Button’ has no member named ‘selection_color’
+  650 |     g_start_btn->selection_color(fl_rgb_color(170, 75, 0));
+      |                  ^~~~~~~~~~~~~~~
+main.cpp:651:18: error: ‘class Fl_Toggle_Button’ has no member named ‘labelcolor’
+  651 |     g_start_btn->labelcolor(FL_WHITE);
+      |                  ^~~~~~~~~~
+main.cpp:652:18: error: ‘class Fl_Toggle_Button’ has no member named ‘labelfont’
+  652 |     g_start_btn->labelfont(FL_HELVETICA_BOLD);
+      |                  ^~~~~~~~~
+main.cpp:653:18: error: ‘class Fl_Toggle_Button’ has no member named ‘labelsize’
+  653 |     g_start_btn->labelsize(13);
+      |                  ^~~~~~~~~
+main.cpp:654:18: error: ‘class Fl_Toggle_Button’ has no member named ‘callback’; did you mean ‘void (* Fl_Widget::callback_)(Fl_Widget*, void*)’? (not accessible from this context)
+  654 |     g_start_btn->callback(start_cb);
+      |                  ^~~~~~~~
+/usr/include/FL/Fl_Widget.H:105:16: note: declared private here
+  105 |   Fl_Callback* callback_;
+      |                ^~~~~~~~~
+main.cpp:660:12: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  660 |         b->box(FL_NO_BOX);
+      |            ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:661:12: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  661 |         b->labelcolor(fl_rgb_color(105, 108, 125));
+      |            ^~~~~~~~~~
+main.cpp:662:12: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  662 |         b->labelsize(10);
+      |            ^~~~~~~~~
+main.cpp:663:12: error: ‘class Fl_Box’ has no member named ‘align’
+  663 |         b->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+      |            ^~~~~
+main.cpp:669:12: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  669 |         b->box(FL_NO_BOX);
+      |            ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:670:12: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  670 |         b->labelcolor(fl_rgb_color(140, 143, 155));
+      |            ^~~~~~~~~~
+main.cpp:671:12: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  671 |         b->labelsize(10);
+      |            ^~~~~~~~~
+main.cpp:672:12: error: ‘class Fl_Box’ has no member named ‘align’
+  672 |         b->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+      |            ^~~~~
+main.cpp:679:14: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  679 |         sep->box(FL_FLAT_BOX);
+      |              ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:680:14: error: ‘class Fl_Box’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  680 |         sep->color(fl_rgb_color(55, 55, 68));
+      |              ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:683:15: error: ‘class Fl_Box’ has no member named ‘box’; did you mean ‘uchar Fl_Widget::box_’? (not accessible from this context)
+  683 |     g_status->box(FL_FLAT_BOX);
+      |               ^~~
+/usr/include/FL/Fl_Widget.H:114:9: note: declared private here
+  114 |   uchar box_;
+      |         ^~~~
+main.cpp:684:15: error: ‘class Fl_Box’ has no member named ‘color’; did you mean ‘Fl_Color Fl_Widget::color_’? (not accessible from this context)
+  684 |     g_status->color(fl_rgb_color(28, 28, 36));
+      |               ^~~~~
+/usr/include/FL/Fl_Widget.H:110:12: note: declared private here
+  110 |   Fl_Color color_;
+      |            ^~~~~~
+main.cpp:685:15: error: ‘class Fl_Box’ has no member named ‘labelcolor’
+  685 |     g_status->labelcolor(fl_rgb_color(130, 200, 130));
+      |               ^~~~~~~~~~
+main.cpp:686:15: error: ‘class Fl_Box’ has no member named ‘labelsize’
+  686 |     g_status->labelsize(10);
+      |               ^~~~~~~~~
+main.cpp:687:15: error: ‘class Fl_Box’ has no member named ‘labelfont’
+  687 |     g_status->labelfont(FL_COURIER);
+      |               ^~~~~~~~~
+main.cpp:688:15: error: ‘class Fl_Box’ has no member named ‘align’
+  688 |     g_status->align(FL_ALIGN_LEFT | FL_ALIGN_INSIDE);
+      |               ^~~~~
+main.cpp:542:38: warning: unused variable ‘TW’ [-Wunused-variable]
+  542 |     static constexpr int T0_X = 300, TW   = 120, T_GAP = 4; // tiles
+      |                                      ^~
+main.cpp:542:50: warning: unused variable ‘T_GAP’ [-Wunused-variable]
+  542 |     static constexpr int T0_X = 300, TW   = 120, T_GAP = 4; // tiles
+      |                                                  ^~~~~
+main.cpp: At global scope:
+main.cpp:459:13: warning: ‘void start_cb(Fl_Widget*, void*)’ defined but not used [-Wunused-function]
+  459 | static void start_cb(Fl_Widget* w, void*) {
+      |             ^~~~~~~~
+main.cpp:454:13: warning: ‘void load_cb(Fl_Widget*, void*)’ defined but not used [-Wunused-function]
+  454 | static void load_cb(Fl_Widget* w, void*) {
+      |             ^~~~~~~
+main.cpp:449:13: warning: ‘void throttle_cb(Fl_Widget*, void*)’ defined but not used [-Wunused-function]
+  449 | static void throttle_cb(Fl_Widget* w, void*) {
+      |             ^~~~~~~~~~~
+make: *** [Makefile:16: main.o] Error 1
