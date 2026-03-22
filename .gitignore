@@ -1,2 +1,5 @@
 *.o
 engine_test
+vibe_sim_gui
+/vibe_test/engine_test
+/vibe_gui/vibe_sim_gui
